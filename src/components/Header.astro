@@ -1,0 +1,50 @@
+---
+import Logo from "../components/Logo.astro";
+---
+
+<!-- Oferta promocional (fixeada) -->
+<div
+  class="flex py-5 fixed top-0 w-full justify-center text-xs font-medium z-40 bg-stone-100"
+>
+  <p>
+    Take delivery by December 31 to receive 3 months of FSD (Supervised) and
+    Supercharging. <a href="#">Learn More</a>
+  </p>
+</div>
+
+<!-- Header (también con z-index para que esté por encima del video) -->
+<div class="relative z-30">
+  <header
+    class="pt-[80px] px-10 flex items-center w-full justify-between text-white"
+  >
+    <div>
+      <Logo />
+    </div>
+
+    <nav>
+      <ul
+        class="flex text-xs [&>li>a]:font-semibold [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
+      >
+        <li><a href="#">Vehicles</a></li>
+        <li><a href="#">Energy</a></li>
+        <li><a href="#">Charging</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">We, Robot</a></li>
+      </ul>
+    </nav>
+
+    <div class="flex font-semibold [&>a]:inline-block [&>a]:px-4 [&>a]:py-1">
+      <a href="">
+        <svg class="h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <!-- Icono 1 -->
+        </svg>
+      </a>
+      <a href="">
+        <svg class="h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <!-- Icono 2 -->
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
