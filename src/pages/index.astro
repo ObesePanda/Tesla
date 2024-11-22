@@ -7,17 +7,12 @@ import Logo from "../components/Logo.astro";
 ---
 
 <Layout title="Tesla Clone">
-  <main>
-    <section
-      class="bg-black h-screen w-screen text-left overflow-hidden relative"
-    >
-      <Header />
-      <HeroSection />
-    </section>
-    <section
-      class="bg-black h-screen w-screen text-left overflow-hidden relative"
-    >
-      <HeroSection2 />
-    </section>
+  <Header />
+
+  <main class="snap-y snap-mandatory relative w-full h-screen overflow-auto">
+    <div class="snap-center"><HeroSection /></div>
+    <div class="snap-center"><HeroSection2 /></div>
+    <div class="snap-center"><HeroSection2 /></div>
+    <div class="snap-center"><HeroSection2 /></div>
   </main>
 </Layout>
